@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "14.15.4",
-    "npm": "5.0.3"
+    "node": "14.15.4"
+    
   },
   "scripts": {
     "start": "node index.js",
@@ -26,5 +26,8 @@
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "stripe": "^8.140.0"
+  },
+  "devDependencies": {
+    "graceful-fs": "^4.2.6"
   }
 }
