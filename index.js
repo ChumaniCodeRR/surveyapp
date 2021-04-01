@@ -5,6 +5,7 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 //const authRoutes = require('./routes/authRoutes');
 
@@ -27,7 +28,7 @@ app.use(passport.session());
 //return routes, require the auth returns 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
-
+require('./routes/surveyRoutes')(app);
 //configuartion for express server
 
 if (process.env.NODE_ENV == 'production'){
